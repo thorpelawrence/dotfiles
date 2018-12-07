@@ -3,5 +3,5 @@
 ```
 git clone
 cd dotfiles
-stow *
+stow .
 ```
