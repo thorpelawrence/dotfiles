@@ -9,6 +9,9 @@ set expandtab
 set autoindent
 set smartindent
 
+" Fix backspace
+set backspace=2
+
 filetype plugin indent on
 
 " Handle multiple buffers effectively
