@@ -16,5 +16,9 @@ antigen apply
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-alias cat=bat
-# alias cat='bat --paging=never'
+if type bat > /dev/null; then
+  alias cat=bat
+  # alias cat='bat --paging=never'
+fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
