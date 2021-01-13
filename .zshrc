@@ -14,7 +14,7 @@ antigen bundle sindresorhus/pure
 
 antigen apply
 
-if type bat > /dev/null; then
+if (( $+commands[bat] )); then
   alias cat=bat
   # alias cat='bat --paging=never'
 fi
