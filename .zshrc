@@ -14,10 +14,7 @@ antigen bundle sindresorhus/pure
 
 antigen apply
 
-if (( $+commands[bat] )); then
-  alias cat=bat
-  # alias cat='bat --paging=never'
-fi
+(( $+commands[bat] )) && alias cat=bat # alias cat='bat --paging=never'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
