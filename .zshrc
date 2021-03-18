@@ -22,6 +22,7 @@ zinit lucid light-mode for \
     OMZL::history.zsh \
     OMZL::theme-and-appearance.zsh \
     OMZL::termsupport.zsh \
+    OMZL::clipboard.zsh \
     OMZP::git \
     OMZP::command-not-found \
     as"completion" \
