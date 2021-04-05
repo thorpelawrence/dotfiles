@@ -43,10 +43,14 @@ zinit lucid light-mode for \
 
 (( $+commands[bat] )) && alias cat=bat # alias cat="bat --paging=never"
 
-KERNEL_NAME=$(uname -s)
+KERNEL_NAME="$(uname -s)"
 
 if [[ "$KERNEL_NAME" == "Darwin" ]]; then
     test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 elif [[ "$KERNEL_NAME" == "Linux" ]]; then
     alias open=xdg-open
 fi
+
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+gpgconf --launch gpg-agent
