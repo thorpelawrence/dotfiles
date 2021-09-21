@@ -29,6 +29,7 @@ zinit lucid light-mode for \
         OMZP::docker/_docker \
     OMZP::docker-compose \
     OMZP::yarn \
+    OMZP::golang \
     OMZP::fasd \
     from"gh-r" as"program" \
         junegunn/fzf \
