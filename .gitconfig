@@ -1,6 +1,6 @@
 [commit]
 	gpgsign = true
-[url "git@github.com:"]
-	insteadOf = https://github.com/
+[includeIf "gitdir:~/"]
+	path = ~/.gitconfig.redirect-ssh
 [include]
-    path = ~/.gitconfig.local
+	path = ~/.gitconfig.local
