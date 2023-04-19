@@ -21,9 +21,8 @@ set hidden
 set laststatus=2
 
 " Plugins (vim-plug)
-call plug#begin('~/.vim/plugged')
-Plug 'maralla/completor.vim'
-Plug 'scrooloose/nerdtree'
+call plug#begin()
+Plug 'tpope/vim-vinegar'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
@@ -38,10 +37,8 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
 " Key mappings
-map <C-o> :NERDTreeToggle<CR>
+map <C-o> :Lexplore<CR>
 map ; :Files<CR>
-
-let g:completor_python_binary = '/usr/local/bin/python'
 
 " Colours
 color dracula
