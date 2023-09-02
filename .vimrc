@@ -34,6 +34,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sleuth'
 Plug 'airblade/vim-gitgutter'
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
@@ -42,6 +43,7 @@ map <C-o> :Lexplore<CR>
 map ; :Files<CR>
 
 " Colours
+let g:dracula_colorterm=0
 color dracula
 let g:airline_theme='dracula'
 
