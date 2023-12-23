@@ -8,6 +8,9 @@ set tabstop=4
 set expandtab
 set autoindent
 set smartindent
+set ignorecase smartcase
+set list
+set lcs+=space:·
 
 " Fix backspace
 set backspace=2
